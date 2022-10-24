@@ -1,0 +1,25 @@
+#Here take input from users.
+string = input("Enter a string: ")
+
+#Its a function to reverse a string.
+def rev(s):
+  r = ""
+  for i in s:
+    r = i + r
+  return r
+#Here print a reverse string.
+print("Reverse String is: " + rev(string))
+
+#It check whether a string is palindrome or not.
+if(pal == rev(pal)):
+  print("String is Palindrome!")
+else:
+  print("String is not Palindrome!")
+
+
+#Another method to reverse string in python
+def rev1(s):
+  r1 = "".join(reversed(s))
+  return r1
+
+print("Another method is " + rev1(string))
